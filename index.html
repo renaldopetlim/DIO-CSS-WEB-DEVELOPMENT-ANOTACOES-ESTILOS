@@ -13,7 +13,344 @@
         <h1 class="title">CSS Web Developer - Estilos</h1>
     </header>
     <main>
-        
+        <section>
+            <h2>Pseudo Elementos</h2>
+            <div>
+                <div>
+                    <div>
+                        <h3>First Letter</h3>
+                    </div>
+                    <p>
+                        Em CSS, "::first-letter" é um pseudo-elemento usado para aplicar estilos especificamente à primeira letra de um bloco de texto. 
+                        Ele é frequentemente utilizado para criar efeitos tipográficos, como capitulares (letras grandes no início de parágrafos), muito comuns em revistas e livros.
+                    </p>
+                    <h6>
+                        p::first-letter { font-size: 200%; font-weight: bold; color: darkred; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>First Line</h3>
+                    </div>
+                    <p>
+                        O "::first-line" em CSS é um pseudo-elemento usado para aplicar estilos apenas à primeira linha visível de um bloco de texto, conforme o tamanho da tela ou do contêiner. 
+                        Ou seja, o que for exibido visualmente como a "primeira linha" na tela é o que será afetado — não a primeira frase ou sentença.
+                    </p>
+                    <h6>
+                        p::first-line { font-weight: bold; color: teal; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Back Drop</h3>
+                    </div>
+                    <p>
+                        Em CSS, "backdrop" se refere ao plano de fundo de elementos modais, menus suspensos, caixas de diálogo ou outros componentes que flutuam sobre o conteúdo principal. 
+                        Ele geralmente é usado para aplicar um efeito de desfoque, sombra ou cor escura ao que está por trás do elemento ativo, criando destaque visual.
+                    </p>
+                    <h6>
+                        background-color: rgba(0, 0, 0, 0.5); /* fundo escurecido */<br>
+                        backdrop-filter: blur(4px);           /* desfoque no fundo */
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Marker</h3>
+                    </div>
+                    <p>
+                        Em CSS, ::marker é um pseudo-elemento usado para estilizar o marcador de listas, ou seja, os símbolos que aparecem antes de itens de lista (<ul> ou <ol>), como bolinhas, números ou outros ícones.
+                    </p>
+                    <h6>
+                        li::marker { color: red; content: "→"; }
+                    </h6>
+                    <h6>
+                        li::marker { content: "✅"; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Placeholder</h3>
+                    </div>
+                    <p>
+                        Em CSS, "::placeholder" é um pseudo-elemento usado para estilizar o texto que aparece dentro de inputs ou textareas antes do usuário digitar algo — o famoso placeholder.
+                    </p>
+                    <h6>
+                        input::placeholder { color: gray; font-style: italic; opacity: 0.7; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Selection</h3>
+                    </div>
+                    <p>
+                        Em CSS, "::selection" é um pseudo-elemento usado para estilizar o texto que o usuário seleciona com o mouse ou teclado (tipo quando você clica e arrasta pra marcar um trecho).
+                    </p>
+                    <h6>
+                        ::selection { background-color: #ffb347; color: black; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>File Selector Button</h3>
+                    </div>
+                    <p>
+                        O pseudo-elemento "::file-selector-button" em CSS permite estilizar o botão de seleção de arquivos que aparece em inputs do tipo file "input type="file"".
+                    </p>
+                    <h6>
+                        input::file-selector-button { }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Before e After</h3>
+                    </div>
+                    <p>
+                        Em CSS, ::before e ::after são pseudo-elementos usados para inserir conteúdo antes ou depois de um elemento, sem precisar adicionar esse conteúdo diretamente no HTML.
+                        São muito úteis pra criar detalhes visuais, ícones, animações, efeitos decorativos, e até componentes inteiros com apenas CSS.
+                    </p>
+                    <h6>
+                        .elemento::before { content: "🔹"; color: blue; }
+                    </h6>
+                    <h6>
+                        .elemento::after { content: "🔹"; color: orange; }
+                    </h6>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        <section>
+            <h2>Pseudo Classes</h2>
+            <div>
+                <div>
+                    <div>
+                        <h3>Hover</h3>
+                    </div>
+                    <p>
+                        Em CSS, ":hover" é um pseudoclass selector usado para aplicar estilos a um elemento quando o usuário passa o mouse sobre ele.
+                    </p>
+                    <h6>
+                        button:hover { color: white; transition: background-color 0.3s ease; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Active</h3>
+                    </div>
+                    <p>
+                        Em CSS, ":active" é um pseudoclass selector que se aplica a um elemento enquanto ele está sendo ativado, ou seja, no exato momento em que o usuário clica ou toca nele.
+                    </p>
+                    <h6>
+                        button:active { background-color: darkblue; transform: scale(0.98); }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Focus</h3>
+                    </div>
+                    <p>
+                        Em CSS, ":focus" é um pseudoclass selector que se aplica a um elemento quando ele está em foco, ou seja, quando está pronto para receber uma entrada do usuário (como digitar texto, usar o teclado, etc).
+                    </p>
+                    <h6>
+                        input:focus { border: 2px solid blue; outline: none; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Target</h3>
+                    </div>
+                    <p>
+                        Em CSS, ":target" é um pseudoclass selector usado para aplicar estilos a um elemento quando ele é o alvo de um link com âncora (usando #id na URL).
+                        Quando a URL aponta para um determinado id de um elemento, esse elemento se torna o "target" e o CSS :target entra em ação.
+                    </p>
+                    <h6>
+                        :target {  }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Enabled e Disabled</h3>
+                    </div>
+                    <p>
+                        :enabled e :disabled são pseudoclasses em CSS usadas para selecionar elementos de formulário com base no seu estado de ativação.
+                    </p>
+                    <div>
+                        <h4>:enabled</h4>
+                        <p>Seleciona elementos de formulário que estão ativos, ou seja, o usuário pode interagir com eles.</p>
+                        <h6>
+                            input:enabled { background-color: white; border: 2px solid green; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:disabled</h4>
+                        <p>Seleciona elementos desativados, que estão bloqueados para interação do usuário.</p>
+                        <h6>
+                            input:disabled { background-color: #eee; border: 2px solid gray; color: #999; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Link e Visited</h3>
+                    </div>
+                    <div>
+                        <h4>:link</h4>
+                        <p>Seleciona links que ainda não foram visitados pelo usuário (ou seja, ainda não clicados).</p>
+                        <h6>
+                            a:link { color: blue; text-decoration: none; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:visited</h4>
+                        <p>Seleciona links que já foram clicados/visitados.</p>
+                        <h6>
+                            a:visited { color: purple; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Place Holder Shown</h3>
+                    </div>
+                    <p>
+                        Em CSS, a pseudoclasse ":placeholder-shown" é usada para selecionar campos de formulário "input", "textarea" que estão com o texto do placeholder visível, ou seja, ainda estão vazios.
+                    </p>
+                    <h6>
+                        input:placeholder-shown { border: 2px dashed orange; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Checked e Indeterminate</h3>
+                    </div>
+                    <p>
+                        ":checked" e ":indeterminate" são pseudoclasses CSS usadas principalmente com checkboxes e radio buttons.
+                    </p>
+                    <div>
+                        <h4>:checked</h4>
+                        <p>Seleciona inputs que estão marcados (selecionados pelo usuário).</p>
+                        <h6>
+                            input:checked { outline: 2px solid green; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:indeterminate</h4>
+                        <p>Seleciona elementos que estão em um estado intermediário, ou seja, nem marcados nem desmarcados.</p>
+                        <h6>
+                            input:indeterminate { background-color: yellow; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Valid e Invalid</h3>
+                    </div>
+                    <div>
+                        <h4>:valid</h4>
+                        <p>Seleciona campos de formulário que passam nas regras de validação HTML, como:</p>
+                        <ul>
+                            <li>Campos preenchidos obrigatórios (required)</li>
+                            <li>Formato correto (ex: email válido)</li>
+                        </ul>
+                        <h6>
+                            input:valid { border: 2px solid green; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:invalid</h4>
+                        <p>Seleciona campos que não passam na validação (estão vazios ou com formato errado).</p>
+                        <h6>
+                            input:invalid { border: 2px solid red; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>In-range e Out-of-range</h3>
+                    </div>
+                    <div>
+                        <h4>:in-range</h4>
+                        <p>Seleciona inputs cujo valor está dentro do intervalo permitido.</p>
+                        <h6>
+                            input:in-range { border: 2px solid green; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:out-of-range</h4>
+                        <p>Seleciona inputs com valores fora do intervalo definido.</p>
+                        <h6>
+                            input:out-of-range { border: 2px solid red; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Required e Optional</h3>
+                    </div>
+                    <div>
+                        <h4>:required</h4>
+                        <p>Seleciona campos que têm o atributo required, ou seja, são obrigatórios.</p>
+                        <h6>
+                            input:required { border-left: 4px solid red; }
+                        </h6>
+                    </div>
+                    <div>
+                        <h4>:optional</h4>
+                        <p>Seleciona campos que não são obrigatórios, ou seja, que não têm o atributo required.</p>
+                        <h6>
+                            input:optional { border-left: 4px solid green; }
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Autofill</h3>
+                    </div>
+                    <p>Seleciona campos que foram preenchidos automaticamente pelo navegador, com dados salvos do usuário.</p>
+                    <h6>
+                        input:-webkit-autofill { background-color: #e0f7fa; border: 2px solid #00acc1; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Root</h3>
+                    </div>
+                    <p>O ":root" uma das pseudoclasses mais poderosas do CSS, principalmente quando você começa a trabalhar com variáveis.</p>
+                    <h6>
+                        :root { --cor-principal: #0d9488; --tamanho-fonte: 16px; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Nth Last Child</h3>
+                    </div>
+                    <p>É uma pseudoclasse CSS que seleciona um ou mais filhos de um elemento com base na posição final (do último para o primeiro).</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Nth Last of Type</h3>
+                    </div>
+                    <p>É uma pseudoclasse CSS que seleciona o(s) elemento(s) de um certo tipo (como div, p, li, etc) com base na posição a partir do final, dentro do seu pai.</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Only Child</h3>
+                    </div>
+                    <p>Seleciona um elemento que é o único filho do seu pai — ou seja, se o elemento for o único dentro do container, esse estilo será aplicado.</p>
+                    <h6>
+                        p:only-child { color: red; }
+                    </h6>
+                </div>
+                <div>
+                    <div>
+                        <h3>Only of Type</h3>
+                    </div>
+                    <p>Seleciona um elemento que é o único do seu tipo (tag) dentro do pai — independente de ter outros irmãos de outras tags.</p>
+                    <h6>
+                        p:only-of-type { color: blue; }
+                    </h6>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
