@@ -99,9 +99,7 @@
             display: flex;
             justify-content: center;
         }
-            .flex-p::first-letter{
-                font-size: 26px;
-            }
+
             .flex-h3{
                 display: flex;
                 justify-content: center;
@@ -114,4 +112,12 @@
                 .flex-img img{
                     width: fit-content;
                 }
+/* ------ FIRST LETTER ------ */
+.flex-p1::first-letter{
+    font-size: 26px;
+}
+/* ------ FIRST LINE ------ */
+.flex-p2::first-line{
+    color: chocolate;
+}
 /* -------------------- PSEUDO CLASSES -------------------- */
