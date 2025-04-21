@@ -27,21 +27,52 @@
             font-size: 24px;
         }
         h3{
+            display: flex;
+            justify-content: center;
+            margin: 6px 75px 6px 75px;
+            padding: 2px 30px 2px 30px;
+            width: fit-content;
+            background-color: var(--title-h3);
+            border-radius: 25px;
+
             font-size: 20px;
         }
         h4{
+            display: flex;
+            justify-content: center;
+            margin: 6px 25px 6px 25px;
+            padding: 2px 30px 2px 30px;
+            width: 16vw;
+            background-color: var(--title-h4);
+            border-radius: 25px;
+
             font-size: 16px;
         }
         h5{
+            margin: 6px 25px 6px 30px;
+            padding: 2px 20px 2px 20px;
+            width: fit-content;
+            background-color: var(--title-h5);
+            border-radius: 25px;
+            
             font-size: 14px;
         }
         p{
+            margin: 0 10px 0 10px;
+            text-align: justify;
+
             font-size: 14px;
         }
         li{
             font-size: 14px;
         }
         h6{
+            margin: 3px 0 0 25px;
+            padding: 3px 15px 3px 15px;
+            width: fit-content;
+            background-color: yellowgreen;
+            border-radius: 25px;
+
             font-size: 12px;
         }
 /* -------------------- HEADER -------------------- */
@@ -68,3 +99,19 @@
             display: flex;
             justify-content: center;
         }
+            .flex-p::first-letter{
+                font-size: 26px;
+            }
+            .flex-h3{
+                display: flex;
+                justify-content: center;
+            }
+                .flex-img div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+                .flex-img img{
+                    width: fit-content;
+                }
+/* -------------------- PSEUDO CLASSES -------------------- */

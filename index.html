@@ -17,21 +17,29 @@
             <div class="flex-title">
                 <h2>Pseudo Elementos</h2>
             </div>
-            <div>
+            <div class="flex">
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>First Letter</h3>
                     </div>
-                    <p>
+                    <p class="flex-p">
                         Em CSS, "::first-letter" é um pseudo-elemento usado para aplicar estilos especificamente à primeira letra de um bloco de texto. 
                         Ele é frequentemente utilizado para criar efeitos tipográficos, como capitulares (letras grandes no início de parágrafos), muito comuns em revistas e livros.
                     </p>
                     <h6>
                         p::first-letter { font-size: 200%; font-weight: bold; color: darkred; }
                     </h6>
+                    <div class="flex-img">
+                        <h5>Exemplo Prático</h5>
+                        <div>
+                            <img src="/assets/pseudo-elementos/first-letter-html.png" alt="">
+                            <img src="/assets/pseudo-elementos/first-letter-css.png" alt="">
+                            <p><b>Resultado: </b>A letra "R" de "Renaldo" aparecerá maior e azul.</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>First Line</h3>
                     </div>
                     <p>
@@ -43,7 +51,7 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>Back Drop</h3>
                     </div>
                     <p>
@@ -56,11 +64,11 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>Marker</h3>
                     </div>
                     <p>
-                        Em CSS, ::marker é um pseudo-elemento usado para estilizar o marcador de listas, ou seja, os símbolos que aparecem antes de itens de lista (<ul> ou <ol>), como bolinhas, números ou outros ícones.
+                        Em CSS, ::marker é um pseudo-elemento usado para estilizar o marcador de listas, ou seja, os símbolos que aparecem antes de itens de lista (ul ou ol), como bolinhas, números ou outros ícones.
                     </p>
                     <h6>
                         li::marker { color: red; content: "→"; }
@@ -70,7 +78,7 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>Placeholder</h3>
                     </div>
                     <p>
@@ -81,7 +89,7 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>Selection</h3>
                     </div>
                     <p>
@@ -92,7 +100,7 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>File Selector Button</h3>
                     </div>
                     <p>
@@ -103,7 +111,7 @@
                     </h6>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex-h3">
                         <h3>Before e After</h3>
                     </div>
                     <p>
@@ -117,7 +125,6 @@
                         .elemento::after { content: "🔹"; color: orange; }
                     </h6>
                 </div>
-                <div></div>
             </div>
         </article>
 
