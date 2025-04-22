@@ -62,21 +62,31 @@
                     <div class="flex-h3">
                         <h3>Back Drop</h3>
                     </div>
-                    <p>
-                        Em CSS, "backdrop" se refere ao plano de fundo de elementos modais, menus suspensos, caixas de diálogo ou outros componentes que flutuam sobre o conteúdo principal. 
-                        Ele geralmente é usado para aplicar um efeito de desfoque, sombra ou cor escura ao que está por trás do elemento ativo, criando destaque visual.
-                    </p>
+                    <div class="flex-p3">
+                        <p>
+                            Em CSS, "backdrop" se refere ao plano de fundo de elementos modais, menus suspensos, caixas de diálogo ou outros componentes que flutuam sobre o conteúdo principal. 
+                            Ele geralmente é usado para aplicar um efeito de desfoque, sombra ou cor escura ao que está por trás do elemento ativo, criando destaque visual.
+                        </p>
+                    </div>
                     <h6>
                         background-color: rgba(0, 0, 0, 0.5); /* fundo escurecido */<br>
                         backdrop-filter: blur(4px);           /* desfoque no fundo */
                     </h6>
+                    <!--<div>
+                        <h5>Exemplo Prático</h5>
+                        <div>
+                            <img src="/assets/pseudo-elementos/backdrop-filter-html.png" alt="">
+                            <img src="/assets/pseudo-elementos/backdrop-filter-css.png" alt="">
+                            <p><b>Resultado: </b></p>
+                        </div>
+                    </div>-->
                 </div>
                 <div>
                     <div class="flex-h3">
                         <h3>Marker</h3>
                     </div>
                     <p>
-                        Em CSS, ::marker é um pseudo-elemento usado para estilizar o marcador de listas, ou seja, os símbolos que aparecem antes de itens de lista (ul ou ol), como bolinhas, números ou outros ícones.
+                        Em CSS, "::marker" é um pseudo-elemento usado para estilizar o marcador de listas, ou seja, os símbolos que aparecem antes de itens de lista (ul ou ol), como bolinhas, números ou outros ícones.
                     </p>
                     <h6>
                         li::marker { color: red; content: "→"; }
@@ -84,6 +94,21 @@
                     <h6>
                         li::marker { content: "✅"; }
                     </h6>
+                    <div class="flex-img">
+                        <h5>Exemplo Prático</h5>
+                        <div>
+                            <img src="/assets/pseudo-elementos/marker-html.png" alt="">
+                            <img src="/assets/pseudo-elementos/marker-css.png" alt="">
+                            <p><b>Resultado: </b>Isso deixa os marcadores das listas laranjas, maiores e em negrito.</p>
+                            <div class="div-1">
+                                <ul class="flex-p4">
+                                    <li>❌ Marcador 1</li>
+                                    <li>✅ Marcador 2</li>
+                                    <li>🔢 Marcador 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div class="flex-h3">

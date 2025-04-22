@@ -115,9 +115,29 @@
 /* ------ FIRST LETTER ------ */
 .flex-p1::first-letter{
     font-size: 26px;
+    color: blueviolet;
 }
 /* ------ FIRST LINE ------ */
 .flex-p2::first-line{
     color: chocolate;
 }
+/* ------ BACKDROP FILTER ------ */
+
+/* ------ MARKER ------ */
+.flex-p4 li::marker{
+    color: orange;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+    .div-1{
+        margin-left: 25px;
+    }
+/* ------ PLACEHOLDER ------ */
+
+/* ------ SELECTION ------ */
+
+/* ------ FILE SELECTOR BUTTON ------ */
+
+/* ------ BEFORE e AFTER ------ */
+
 /* -------------------- PSEUDO CLASSES -------------------- */
