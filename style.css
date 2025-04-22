@@ -124,16 +124,26 @@
 /* ------ BACKDROP FILTER ------ */
 
 /* ------ MARKER ------ */
-.flex-p4 li::marker{
-    color: orange;
-    font-weight: bold;
-    font-size: 1.5em;
+.div-1{
+    margin-left: 25px;
 }
-    .div-1{
-        margin-left: 25px;
+    .flex-p4 li::marker{
+        color: orange;
+        font-weight: bold;
+        font-size: 1.5em;
     }
 /* ------ PLACEHOLDER ------ */
-
+.flex-img input{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 6px 0 6px 12px;
+    width: fit-content;
+}
+    .flex-img input::placeholder{
+        color: #888;
+        font-size: 12px;
+        font-style: italic;
+    }
 /* ------ SELECTION ------ */
 
 /* ------ FILE SELECTOR BUTTON ------ */
