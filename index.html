@@ -276,198 +276,21 @@
                 </div>
                 <div>
                     <div>
-                        <h3>Target</h3>
-                    </div>
-                    <p>
-                        Em CSS, ":target" é um pseudoclass selector usado para aplicar estilos a um elemento quando ele é o alvo de um link com âncora (usando #id na URL).
-                        Quando a URL aponta para um determinado id de um elemento, esse elemento se torna o "target" e o CSS :target entra em ação.
-                    </p>
-                    <h6>
-                        :target {  }
-                    </h6>
-                </div>
-                <div>
-                    <div>
-                        <h3>Enabled e Disabled</h3>
-                    </div>
-                    <p>
-                        :enabled e :disabled são pseudoclasses em CSS usadas para selecionar elementos de formulário com base no seu estado de ativação.
-                    </p>
-                    <div>
-                        <h4>:enabled</h4>
-                        <p>Seleciona elementos de formulário que estão ativos, ou seja, o usuário pode interagir com eles.</p>
-                        <h6>
-                            input:enabled { background-color: white; border: 2px solid green; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:disabled</h4>
-                        <p>Seleciona elementos desativados, que estão bloqueados para interação do usuário.</p>
-                        <h6>
-                            input:disabled { background-color: #eee; border: 2px solid gray; color: #999; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Link e Visited</h3>
-                    </div>
-                    <div>
-                        <h4>:link</h4>
-                        <p>Seleciona links que ainda não foram visitados pelo usuário (ou seja, ainda não clicados).</p>
-                        <h6>
-                            a:link { color: blue; text-decoration: none; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:visited</h4>
-                        <p>Seleciona links que já foram clicados/visitados.</p>
-                        <h6>
-                            a:visited { color: purple; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Place Holder Shown</h3>
-                    </div>
-                    <p>
-                        Em CSS, a pseudoclasse ":placeholder-shown" é usada para selecionar campos de formulário "input", "textarea" que estão com o texto do placeholder visível, ou seja, ainda estão vazios.
-                    </p>
-                    <h6>
-                        input:placeholder-shown { border: 2px dashed orange; }
-                    </h6>
-                </div>
-                <div>
-                    <div>
-                        <h3>Checked e Indeterminate</h3>
-                    </div>
-                    <p>
-                        ":checked" e ":indeterminate" são pseudoclasses CSS usadas principalmente com checkboxes e radio buttons.
-                    </p>
-                    <div>
-                        <h4>:checked</h4>
-                        <p>Seleciona inputs que estão marcados (selecionados pelo usuário).</p>
-                        <h6>
-                            input:checked { outline: 2px solid green; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:indeterminate</h4>
-                        <p>Seleciona elementos que estão em um estado intermediário, ou seja, nem marcados nem desmarcados.</p>
-                        <h6>
-                            input:indeterminate { background-color: yellow; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Valid e Invalid</h3>
-                    </div>
-                    <div>
-                        <h4>:valid</h4>
-                        <p>Seleciona campos de formulário que passam nas regras de validação HTML, como:</p>
-                        <ul>
-                            <li>Campos preenchidos obrigatórios (required)</li>
-                            <li>Formato correto (ex: email válido)</li>
-                        </ul>
-                        <h6>
-                            input:valid { border: 2px solid green; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:invalid</h4>
-                        <p>Seleciona campos que não passam na validação (estão vazios ou com formato errado).</p>
-                        <h6>
-                            input:invalid { border: 2px solid red; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>In-range e Out-of-range</h3>
-                    </div>
-                    <div>
-                        <h4>:in-range</h4>
-                        <p>Seleciona inputs cujo valor está dentro do intervalo permitido.</p>
-                        <h6>
-                            input:in-range { border: 2px solid green; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:out-of-range</h4>
-                        <p>Seleciona inputs com valores fora do intervalo definido.</p>
-                        <h6>
-                            input:out-of-range { border: 2px solid red; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Required e Optional</h3>
-                    </div>
-                    <div>
-                        <h4>:required</h4>
-                        <p>Seleciona campos que têm o atributo required, ou seja, são obrigatórios.</p>
-                        <h6>
-                            input:required { border-left: 4px solid red; }
-                        </h6>
-                    </div>
-                    <div>
-                        <h4>:optional</h4>
-                        <p>Seleciona campos que não são obrigatórios, ou seja, que não têm o atributo required.</p>
-                        <h6>
-                            input:optional { border-left: 4px solid green; }
-                        </h6>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Autofill</h3>
-                    </div>
-                    <p>Seleciona campos que foram preenchidos automaticamente pelo navegador, com dados salvos do usuário.</p>
-                    <h6>
-                        input:-webkit-autofill { background-color: #e0f7fa; border: 2px solid #00acc1; }
-                    </h6>
-                </div>
-                <div>
-                    <div>
                         <h3>Root</h3>
                     </div>
                     <p>O ":root" uma das pseudoclasses mais poderosas do CSS, principalmente quando você começa a trabalhar com variáveis.</p>
                     <h6>
                         :root { --cor-principal: #0d9488; --tamanho-fonte: 16px; }
                     </h6>
-                </div>
-                <div>
-                    <div>
-                        <h3>Nth Last Child</h3>
+                    <div class="div-11">
+                        <h5>Vantagens de usar :root</h5>
+                        <ul>
+                            <li><b>Organização: </b>define suas cores, espaçamentos e fontes num só lugar.</li>
+                            <li><b>Reutilização: </b>não precisa repetir valores em vários lugares.</li>
+                            <li><b>Facilidade de manutenção: </b>muda um valor no :root e atualiza o projeto todo.</li>
+                        </ul>
                     </div>
-                    <p>É uma pseudoclasse CSS que seleciona um ou mais filhos de um elemento com base na posição final (do último para o primeiro).</p>
-                </div>
-                <div>
-                    <div>
-                        <h3>Nth Last of Type</h3>
-                    </div>
-                    <p>É uma pseudoclasse CSS que seleciona o(s) elemento(s) de um certo tipo (como div, p, li, etc) com base na posição a partir do final, dentro do seu pai.</p>
-                </div>
-                <div>
-                    <div>
-                        <h3>Only Child</h3>
-                    </div>
-                    <p>Seleciona um elemento que é o único filho do seu pai — ou seja, se o elemento for o único dentro do container, esse estilo será aplicado.</p>
-                    <h6>
-                        p:only-child { color: red; }
-                    </h6>
-                </div>
-                <div>
-                    <div>
-                        <h3>Only of Type</h3>
-                    </div>
-                    <p>Seleciona um elemento que é o único do seu tipo (tag) dentro do pai — independente de ter outros irmãos de outras tags.</p>
-                    <h6>
-                        p:only-of-type { color: blue; }
-                    </h6>
+                    <img src="/assets/pseudo-classes/root-css.png" alt="">
                 </div>
             </div>
         </article>
