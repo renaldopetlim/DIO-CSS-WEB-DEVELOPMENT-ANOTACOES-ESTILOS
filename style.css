@@ -133,21 +133,35 @@
         font-size: 20px;
     }
 /* ------ PLACEHOLDER ------ */
-.flex-img input{
+.div-2 input{
     border: 1px solid black;
     border-radius: 25px;
     padding: 6px 0 6px 12px;
     width: fit-content;
 }
-    .flex-img input::placeholder{
+    .div-2 input::placeholder{
         color: #888;
         font-size: 12px;
         font-style: italic;
     }
 /* ------ SELECTION ------ */
-
+.flex-p5 p::selection{
+    background-color: purple;
+    color: white;
+}
 /* ------ FILE SELECTOR BUTTON ------ */
-
+.div-3 input::file-selector-button{
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+    .div-3 input::file-selector-button:hover{
+        background-color: #2980b9;
+    }
 /* ------ BEFORE e AFTER ------ */
 
 /* -------------------- PSEUDO CLASSES -------------------- */
