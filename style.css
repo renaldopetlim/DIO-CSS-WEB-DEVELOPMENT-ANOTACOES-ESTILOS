@@ -163,5 +163,14 @@
         background-color: #2980b9;
     }
 /* ------ BEFORE e AFTER ------ */
-
+.frase::before{
+    content: " ★ ";
+    color: green;
+    font-size: 18px;
+}
+.frase::after{
+    content: " ★ ";
+    color: red;
+    font-size: 18px;
+}
 /* -------------------- PSEUDO CLASSES -------------------- */
