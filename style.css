@@ -112,6 +112,9 @@
                 .flex-img img{
                     width: fit-content;
                 }
+                    .div-1{
+                        margin-left: 25px;
+                    }
 /* ------ FIRST LETTER ------ */
 .flex-p1::first-letter{
     font-size: 26px;
@@ -124,14 +127,11 @@
 /* ------ BACKDROP FILTER ------ */
 
 /* ------ MARKER ------ */
-.div-1{
-    margin-left: 25px;
+.flex-p4 li::marker{
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
 }
-    .flex-p4 li::marker{
-        color: orange;
-        font-weight: bold;
-        font-size: 20px;
-    }
 /* ------ PLACEHOLDER ------ */
 .div-2 input{
     border: 1px solid black;
