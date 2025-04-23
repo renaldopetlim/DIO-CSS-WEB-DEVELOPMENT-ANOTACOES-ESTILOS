@@ -87,7 +87,7 @@
         background-color: var(--title-h1);
         border-radius: 25px;
     }
-/* -------------------- PSEUDO ELEMENTOS -------------------- */
+/* -------------------- PSEUDO ELEMENTOS E CLASSES -------------------- */
 #display{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,9 +112,7 @@
                 .flex-img img{
                     width: fit-content;
                 }
-                    .div-1{
-                        margin-left: 25px;
-                    }
+/* -------------------- PSEUDO ELEMENTOS -------------------- */
 /* ------ FIRST LETTER ------ */
 .flex-p1::first-letter{
     font-size: 26px;
@@ -132,6 +130,9 @@
     font-weight: bold;
     font-size: 20px;
 }
+                                .div-1{
+                                    margin-left: 25px;
+                                }
 /* ------ PLACEHOLDER ------ */
 .div-2 input{
     border: 1px solid black;
@@ -174,3 +175,43 @@
     font-size: 18px;
 }
 /* -------------------- PSEUDO CLASSES -------------------- */
+/* ------ HOVER ------ */
+.div-4 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+                                .div-4 p{
+                                    margin: 4px 0 4px 0;
+                                }
+                                .div-4 a{
+                                    margin-left: 20px;
+                                }
+.div-5 button:hover{
+    background-color: #2980b9;
+    transform: scale(1.05);
+    transition: all 1s ease-in-out;
+}
+                                .div-5{
+                                    margin-top: 8px;
+                                }
+                                .div-5 p{
+                                    margin: 4px 0 6px 0;
+                                }
+                                .div-5 button{
+                                    background-color: #3498db;
+                                    color: white;
+                                    border: none;
+                                    padding: 8px 12px;
+                                    border-radius: 25px;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                }
+.div-6 img:hover{
+    filter: brightness(80%);
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+                                .div-6{
+                                    margin: 6px 0 0 0;
+                                }
+/* ------ ACTIVE ------ */
