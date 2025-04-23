@@ -215,3 +215,41 @@
                                     margin: 6px 0 0 0;
                                 }
 /* ------ ACTIVE ------ */
+.div-7 button:active{
+    background-color: #005f73;
+    transform: scale(0.95);
+}
+                                .div-7 p{
+                                    margin: 2px 0 4px 0;
+                                }
+                                .div-7 button{
+                                    background-color: #3498db;
+                                    color: white;
+                                    border: none;
+                                    padding: 8px 12px;
+                                    border-radius: 25px;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                }
+.div-8 button:active{
+    transform: translateY(2px);
+}
+.div-8 button{
+    transition: transform 0.1s ease;
+}
+                                .div-8{
+                                    margin: 8px 0 0 0;
+                                }
+                                .div-8 p{
+                                    margin: 2px 0 4px 0;
+                                }
+                                .div-8 button{
+                                    background-color: #3498db;
+                                    color: white;
+                                    border: none;
+                                    padding: 8px 12px;
+                                    border-radius: 25px;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                }
+/* ------ FOCUS ------ */
