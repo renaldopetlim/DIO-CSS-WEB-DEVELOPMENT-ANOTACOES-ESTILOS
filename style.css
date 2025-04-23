@@ -130,7 +130,7 @@
     .flex-p4 li::marker{
         color: orange;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 20px;
     }
 /* ------ PLACEHOLDER ------ */
 .flex-img input{
